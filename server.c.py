@@ -1,5 +1,5 @@
 #kaylea stewart
-#w0541976
+#code from networking security
 import socket
 import time
 host = '127.0.0.1'
