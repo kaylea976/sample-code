@@ -1,23 +1,23 @@
 import java.util.Scanner;
 public class Fibonacci {
  public static void main(String args[]) {
- System.out.print("Enter an positive integer to calculate Fibonacci number: ");
- Scanner input = new Scanner(System.in);
- long n = input.nextLong();
- if ( n <= 0 )
- System.out.println("Number should be positive integer.");
- else {
- long start = System.currentTimeMillis();
- System.out.println("Iterative: Fibonacci number F(" + n + ") = " +
-fibonacciIterative(n));
- long end = System.currentTimeMillis();
- System.out.println("Iterative: execution time = " + (end - start));
- start = System.currentTimeMillis();
- System.out.println("Recursive: Fibonacci number F(" + n + ") = " +
-fibonacciRecursive(n));
- end = System.currentTimeMillis();
- System.out.println("Recursive: execution time = " + (end - start));
- }
+   System.out.print("Enter an positive integer to calculate Fibonacci number: ");
+   Scanner input = new Scanner(System.in);
+   long n = input.nextLong();
+   if ( n <= 0 )
+     System.out.println("Number should be positive integer.");
+   else {
+     long start = System.currentTimeMillis();
+     System.out.println("Iterative: Fibonacci number F(" + n + ") = " +
+     fibonacciIterative(n));
+     long end = System.currentTimeMillis();
+     System.out.println("Iterative: execution time = " + (end - start));
+     start = System.currentTimeMillis();
+     System.out.println("Recursive: Fibonacci number F(" + n + ") = " +
+     fibonacciRecursive(n));
+     end = System.currentTimeMillis();
+     System.out.println("Recursive: execution time = " + (end - start));
+   }
  }
 
  public static long fibonacciIterative(long n) {
