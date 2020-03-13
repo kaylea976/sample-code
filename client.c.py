@@ -1,5 +1,4 @@
 #kaylea stewart
-#w0541976
 import socket
 def Main():
     host = '127.0.0.1'
